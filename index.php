@@ -11,16 +11,16 @@ include 'connection.php';
 </head>
 
 <body>
-    <?php
+    <form action="./signup.php" method="post">
 
-   
-        while ($outputs = mysqli_fetch_assoc($result)) {
-            echo $outputs['first_name'] . "</br>";
-        };
-    
+        <input type="text" name="first" placeholder="first name"> </br>
+        <input type="text" name="last" placeholder="last name"> </br>
+        <input type="email" name="email" placeholder="email"> </br>
+        <input type="password" name="password" placeholder="password"> </br>
 
+        <button type="submit" name="submit" >submit</button>
 
-    ?>
+    </form>
 
 
 </body>
